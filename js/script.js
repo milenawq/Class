@@ -93,7 +93,7 @@ class User {
             throw new Error("Повинен бути рядок");
         }
 
-        if (typeof age !== "number" && age <= 0) {
+        if (typeof age !== "number" || age <= 0) {
             throw new Error("Вік повинен бути числом та більше за нуль")
         }
 
